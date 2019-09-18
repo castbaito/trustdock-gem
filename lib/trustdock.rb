@@ -1,0 +1,7 @@
+require "json"
+require "faraday"
+require "dry-struct"
+require "trustdock/response/verification"
+require "trustdock/client"
+require "trustdock/error"
+require "trustdock/version"

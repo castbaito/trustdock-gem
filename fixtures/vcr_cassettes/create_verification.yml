@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.test.trustdock.io/v2/verifications
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer api_token
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 01 Oct 2019 23:27:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 995081b8a57ce5e9971ff55cb741d731
+      X-Runtime:
+      - '0.067066'
+      Vary:
+      - Origin
+    body:
+      encoding: UTF-8
+      string: '{"id":"c0785a9a-5a9d-4a52-9347-d0abd7d527cf","id_for_helper":"594b1ed6-183f-44ec-913c-417fc6853951","state":"accepted","result":null,"accepted_at":"2019-10-01T23:27:34.000Z","plans_selected_at":null,"document_submitted_at":null,"prepared_at":null,"verified_at":null}'
+    http_version: 
+  recorded_at: Tue, 01 Oct 2019 23:27:34 GMT
+recorded_with: VCR 5.0.0

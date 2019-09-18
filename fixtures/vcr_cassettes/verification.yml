@@ -1,0 +1,124 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.test.trustdock.io/v2/verifications
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer api_token
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 01 Oct 2019 23:27:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 10183e7bf9709a2b8d1b382e630ee68d
+      X-Runtime:
+      - '0.038171'
+      Vary:
+      - Origin
+    body:
+      encoding: UTF-8
+      string: '{"id":"b3f2fe82-f95c-4eba-a8ce-457738c9ccb9","id_for_helper":"976305a9-0d17-4f38-ab68-21f94bb450ea","state":"accepted","result":null,"accepted_at":"2019-10-01T23:27:34.000Z","plans_selected_at":null,"document_submitted_at":null,"prepared_at":null,"verified_at":null}'
+    http_version: 
+  recorded_at: Tue, 01 Oct 2019 23:27:34 GMT
+- request:
+    method: get
+    uri: https://api.test.trustdock.io/v2/verifications/b3f2fe82-f95c-4eba-a8ce-457738c9ccb9
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer api_token
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 01 Oct 2019 23:27:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Etag:
+      - W/"9181c923dcbe1597d07d2b005ae26833"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ddd7deefd220a7b22dddb170f07c67c6
+      X-Runtime:
+      - '0.029647'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"b3f2fe82-f95c-4eba-a8ce-457738c9ccb9","id_for_helper":"976305a9-0d17-4f38-ab68-21f94bb450ea","state":"accepted","result":null,"accepted_at":"2019-10-01T23:27:34.000Z","plans_selected_at":null,"document_submitted_at":null,"prepared_at":null,"verified_at":null}'
+    http_version: 
+  recorded_at: Tue, 01 Oct 2019 23:27:34 GMT
+recorded_with: VCR 5.0.0
