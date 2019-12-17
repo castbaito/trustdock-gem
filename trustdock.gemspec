@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Ruby client for TRUSTDOCK}
   spec.description   = %q{Ruby client for TRUSTDOCK}
-  spec.homepage      = "https://bitbucket.org/hachidori_develop/trustdock/src/master/"
+  spec.homepage      = "https://github.com/hachidori-inc/trustdock-gem/"
   spec.license       = "MIT"
 
   spec.metadata["homepage_uri"] = spec.homepage

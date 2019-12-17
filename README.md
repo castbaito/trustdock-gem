@@ -67,7 +67,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on BitBucket at https://bitbucket.org/hachidori_develop/trustdock/
+Bug reports and pull requests are welcome on GitHub at https://github.com/hachidori-inc/trustdock-gem/
 
 ## License
 
